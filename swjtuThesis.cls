@@ -49,8 +49,9 @@
 \NewDocumentCommand \songti {}{\CJKfamily{zhsong}}
 \NewDocumentCommand \heiti {}{\CJKfamily{zhhei}}
 % \newCJKfontfamily \sonti{simsun.ttc}[BoldFont=simsun.ttc]
-\setCJKfamilyfont{zhsong}[AutoFakeBold= {2.17}]{SimSun}
-\renewcommand*{\songti}{\CJKfamily{zhsong}}
+% \setCJKfamilyfont{zhsong}[AutoFakeBold= {2.17}]{simsun.ttc}
+% \renewcommand*{\songti}{\CJKfamily{zhsong}}
+\newCJKfontfamily \sonti[AutoFakeBold= {2.17}]{simsun.ttc}
 % 保持url与正文字体一致
 \urlstyle{same}
 
@@ -198,9 +199,9 @@
 		\begin{center}
 			{
 				\zihao{2}
-				{\textbf{\songti\cover@cSchool}}\\
+				{\textbf{\sonti\cover@cSchool}}\\
 				\vspace{3mm}
-				{\textbf{\songti\cover@cThesis}}
+				{\textbf{\sonti\cover@cThesis}}
 			}
 			
 			\vfill
