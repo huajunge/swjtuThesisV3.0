@@ -48,7 +48,9 @@
 \setCJKfamilyfont{zhhei}{SimHei.ttf}
 \NewDocumentCommand \songti {}{\CJKfamily{zhsong}}
 \NewDocumentCommand \heiti {}{\CJKfamily{zhhei}}
-
+% \newCJKfontfamily \sonti{simsun.ttc}[BoldFont=simsun.ttc]
+\setCJKfamilyfont{zhsong}[AutoFakeBold= {2.17}]{SimSun}
+\renewcommand*{\songti}{\CJKfamily{zhsong}}
 % 保持url与正文字体一致
 \urlstyle{same}
 
