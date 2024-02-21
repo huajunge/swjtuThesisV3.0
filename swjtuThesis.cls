@@ -43,9 +43,9 @@
 
 % V3.0更改——手动设置字体
 % 参考设置：macOS Sonoma 14.1.1，需额外手动下载SimSun，SimHei，Latin Modern Math，Linux Libertine O这四种字体
-\setCJKmainfont[BoldFont=SimHei]{SimSun}
-\setCJKfamilyfont{zhsong}{SimSun}
-\setCJKfamilyfont{zhhei}{SimHei}
+\setCJKmainfont[BoldFont=SimHei.ttf]{simsun.ttc}
+\setCJKfamilyfont{zhsong}{simsun.ttc}
+\setCJKfamilyfont{zhhei}{SimHei.ttf}
 \NewDocumentCommand \songti {}{\CJKfamily{zhsong}}
 \NewDocumentCommand \heiti {}{\CJKfamily{zhhei}}
 
