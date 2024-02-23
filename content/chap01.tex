@@ -6,40 +6,8 @@
 
 \section{研究背景与意义}
 \section{国内外研究现状}
+引用\cite{Wang2021ALearning}
 \section{当前研究工作中存在的挑战}
 \section{本文的研究内容}
 \section{本文的贡献和与创新}
 \section{本文的组织结构}
-
-
-
-
-
-
-\subsection{文献引用}
-当用户完成在自己的.bib参考文献库文件中录入所有的参考文献信息之后，可以通过JabRef软件自动生成文献的Bibtexkey，也就是在swjtuThesis中对文献进行引用的关键词，在确保.bib库文件在main.tex主文件中被调用之后，在学位论文的任何位置只要在通过指令\verb|\cite{Bibtexkey}|即可实现对该篇文献的引用。
-
-\par
-在学位论文最后的参考文献列表中，模板会按照出现的顺序(出现多次引用的文献按第一次出现的位置为主)，依照设定好的参考文献样式(国标文件：GB/T 7714-2015)列出所有文中所引用过的参考文献。
-
-\par
-本节最后，给出一段用~\BibTeX{}~实现参考文献插入的实例：
-
-\begin{framed}
-	电磁学作为物理学的一个重要分支，主要研究自然界中四种基本相互作用之一的电磁力，其基本数学描述以及物理框架早于1873年在J. C. Maxwell的经典著作\cite{Maxwell1873}中所奠定。一百多年来，经历了在数代科学家的传承和不断探索\textsuperscript{\cite{Stratton1941,Cheng1989,Jackson1999,Guru2004,Kong2008,Griffiths2012,Purcell2013,Ida2015}}，电磁科学技术的研究和应用都到达了一个前所未有的高度。
-	
-	作为当下电磁学前沿技术应用研究之一的\textbf{非接触电能传输技术}，其本质上是一种借助于空间无形软介质(如磁场、电场、激光、微波等)实现将电能由能量发射端通过非接触的形式传递至能量拾取端的全新电能供给模式\textsuperscript{\cite{黄学良2013}}。目前，在现阶段近距离的大功率非接触能量传输的研究及应用中，普遍使用磁场感应式电能传输技术(Inductive Power Transfer, IPT)\textsuperscript{\cite{covic2013inductive}}。
-	
-	应用在轨道交通牵引供电系统中，IPT技术与传统架空网、三轨、储能式等物理接触供电方式相比存在着十分明显的优点：无接触火花及触电危险，无积尘和接触损耗，无机械磨损，可适应多种恶劣天气环境(如下雪和积水)。综上，\textbf{IPT技术有望成为未来轨道交通牵引供电方式的重要发展方向之一}，近年来，包括西南交通大学智能化牵引供电课题组在内的各国科研究团队逐渐投入对基于IPT技术的非接触牵引供电系统研究\textsuperscript{\cite{Buja2015,Kim2015}}。
-\end{framed}
-
-\par
-在Version 3.0中，为了进一步兼容更多的参考文献格式（比如ArXiv），.bst文件中额外引入了新的函数，以下为新函数的示例，建议进一步参照.bst文件内的注释，.bib文件的新增示例内容以及最终生成文稿的参考文献格式使用新函数：
-
-\begin{framed}
-	这是使用\verb|@website{clevert2015ELU}|的引用效果\cite{clevert2015ELU}。
-
-	这是使用\verb|@article{scarselli2008GNN_article}|的引用效果\cite{scarselli2008GNN_article}，此时使用的是默认的\verb|@article|函数。接下来改用\verb|@freecite{scarselli2008GNN_freecite}|来实现相似的效果，注意此时已经通过\textbf{symbol}和\textbf{freeinfo}完成了对GB/T文献类型标志（\textbf{[FreeCite]}）和文献相关信息（\textbf{TNNLS}）的自定义\cite{scarselli2008GNN_freecite}。
-
-	这是使用\verb|@inproceedings{vaswani2017Transformer_nopages}|的引用效果，注意此时的会议引用不包含页码信息\cite{vaswani2017Transformer_nopages}，而在包含页码信息时，\verb|@inproceedings|与\verb|@book|已经能够支持无页码信息和有页码信息间引用格式的自动切换，注意此时使用\verb|@inproceedings{vaswani2017Transformer_pages}|的引用效果\cite{vaswani2017Transformer_pages}。
-\end{framed}

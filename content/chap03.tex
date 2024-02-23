@@ -2,22 +2,31 @@
 %                西南交通大学研究生学位论文：第三章内容
 %---------------------------------------------------------------------------------
 \chapter{分布式轨迹索引和存储}
+轨迹数据量庞大，传统单机系统难以支撑。为此，急需基于分布式存储的管理架构。大部分原生分布式数据库仅支持一维数据存储。然而，轨迹具有复杂的多维时空结构。因此，需要利用索引技术，将轨迹时空特征转换为一维结构表示，并尽可能使编码保留轨迹时空特征。尽管索引可近似表示轨迹时空特征，但一维转换后会丢失轨迹多维特性。因此，有必要进一步提取轨迹时空特征，同时尽可能少的增加存储开销。本章主要介绍如何在分布式系统中高效存储轨迹数据。首先，章节\ref{sec:data_structure}介绍轨迹数据结构。接着，章节\ref{sec:traj_index}设计轨迹时空索引。然后，章节\ref{sec:feature}提取轨迹代表性特征并压缩原始轨迹。最后，章节\ref{sec:storage}介绍两种分布式轨迹数据存储结构。
+
 \section{轨迹和路网轨迹数据模型}
+\label{sec:data_structure}
+轨迹数据广泛产生于各种应用，蕴含着丰富的时空信息。
+
 \section{轨迹索引}
+\label{sec:traj_index}
 \subsection{时间段编码}
 \subsection{空间形状编码}
 \subsection{时空编码}
 \subsection{ID时间范围编码}
-\section{路网轨迹索引}
-\subsection{时间段编码}
-\subsection{路径编码}
+% \section{路网轨迹索引}
+% \subsection{时间段编码}
+% \subsection{路径编码}
 \section{轨迹代表性特征提取}
+\label{sec:feature}
 \subsection{基于道格拉斯算法的特征点和特征边界提取}
+\subsection{轨迹压缩}
 \subsection{路网轨迹特征提取}
 \section{分布式轨迹数据存储}
+\label{sec:storage}
 \subsection{多索引表存储结构}
 \subsection{辅助索引表存储结构}
 \subsection{索引缓存}
-\section{分布式路网轨迹数据存储}
-\subsection{路网轨迹表}
-\subsection{路网轨迹特征表存储}
+% \section{分布式路网轨迹数据存储}
+% \subsection{路网轨迹表}
+% \subsection{路网轨迹特征表存储}
